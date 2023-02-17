@@ -13,6 +13,7 @@ export default function MovieCard({ movie1 }) {
               ? movie1.Poster
               : "https://via.placeholder.com/400"
           }
+          key={movie1.Title}
           alt={movie1.Title}
         ></img>
       </div>
