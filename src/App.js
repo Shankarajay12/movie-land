@@ -17,7 +17,7 @@ function App() {
 
 
   const searchMovies = async (title) => {
-    const response = await fetch(`${API_URL}&s=${title}`).then(res=>res.json()).then(json=>{
+    await fetch(`${API_URL}&s=${title}`).then(res=>res.json()).then(json=>{
       setMovies(json.Search)
     }).catch(errorOcc)
     
